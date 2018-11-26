@@ -1,0 +1,9 @@
+#ifndef IntactMiddleware_IntactSettings_IncludeExtLibs_h_IsIncluded
+#define IntactMiddleware_IntactSettings_IncludeExtLibs_h_IsIncluded
+
+#include "IntactMiddleware/IncludeExtLibs.h"
+
+#endif // IntactMiddleware_IncludeExtLibs_h_IsIncluded
+
+
+

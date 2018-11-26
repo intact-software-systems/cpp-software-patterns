@@ -1,0 +1,35 @@
+#ifndef DDS_QosPolicy_IncludeLibs_h_IsIncluded
+#define DDS_QosPolicy_IncludeLibs_h_IsIncluded
+
+#include"DDS/Policy/CorePolicyFwd.h"
+#include"DDS/Policy/PolicyKind.h"
+#include"DDS/Policy/QosPolicyCount.h"
+#include"DDS/Policy/QosPolicyBase.h"
+#include"DDS/Policy/UserData.h"
+#include"DDS/Policy/GroupData.h"
+#include"DDS/Policy/DataRepresentation.h"
+#include"DDS/Policy/Deadline.h"
+#include"DDS/Policy/DestinationOrder.h"
+#include"DDS/Policy/Durability.h"
+#include"DDS/Policy/DurabilityService.h"
+#include"DDS/Policy/EntityFactory.h"
+#include"DDS/Policy/History.h"
+#include"DDS/Policy/LatencyBudget.h"
+#include"DDS/Policy/Lifespan.h"
+#include"DDS/Policy/Liveliness.h"
+#include"DDS/Policy/Ownership.h"
+#include"DDS/Policy/OwnershipStrength.h"
+#include"DDS/Policy/Partition.h"
+#include"DDS/Policy/Presentation.h"
+#include"DDS/Policy/ReaderDataLifecycle.h"
+#include"DDS/Policy/Reliability.h"
+#include"DDS/Policy/ResourceLimits.h"
+#include"DDS/Policy/TimeBasedFilter.h"
+#include"DDS/Policy/TopicData.h"
+#include"DDS/Policy/TransportPriority.h"
+#include"DDS/Policy/TypeConsistencyEnforcement.h"
+#include"DDS/Policy/WriterDataLifecycle.h"
+//#include"DDS/Policy/QosChecker.h"
+
+#endif // DDS_Policy_IncludeLibs_h_IsIncluded
+

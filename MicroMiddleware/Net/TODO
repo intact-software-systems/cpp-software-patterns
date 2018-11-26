@@ -1,0 +1,6 @@
+- Move RMI/RPC implementations here
+- Use Interfaces from MicroMiddleware/Interfaces and implement RMI/RPC again
+- Make transparent for use in ServiceConnectionManager, etc.
+- Make transparent for use in all existing interfaces.
+
+

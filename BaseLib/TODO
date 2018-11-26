@@ -1,0 +1,30 @@
+
+\begin{itemize}
+
+\item
+Define ASSERT() that is really a try/catch exception 
+
+\item
+Function that returns a unique user.name/component.name/user-id.
+
+\item
+Secure log-in to MembershipManager and GroupManager
+
+\item
+How-to accomplish secure tcp connections? secure multicast?
+
+\item
+Introduce error codes to get comprehensible return values. For example, LOGIN_FAILURE, 
+
+\item
+Introduce an ErrorManager? To store warnings/errors that have occurred, timestamped.
+It can be a static Singleton, and accessed everywhere. Categorize warnings/errors based
+on who is reporting? Upon segmentation fault, etc, dump timestamped warnings/errors to a file.
+
+\item
+Implement observer pattern (check wikipedia link) for callbacks (similar to signal/slots).
+
+\end{itemize}
+
+
+

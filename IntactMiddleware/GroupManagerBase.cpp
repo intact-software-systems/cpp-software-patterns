@@ -1,0 +1,2 @@
+#include "IntactMiddleware/GroupManagerBase.h"
+

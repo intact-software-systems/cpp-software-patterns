@@ -1,0 +1,14 @@
+<SystemManager>
+
+<Factory name="factory.knuthelv-laptop" host="knuthelv-laptop" port="49999"/>
+<LookupServer host="knuthelv-laptop" port="5000"/>
+
+<Component name="intact.manager" exec="IntactManager" host="knuthelv-laptop" port="-1" start="start"/>
+<Component name="vivaldi.manager" exec="NetworkInformationManager" host="knuthelv-laptop" port="6667" start="start"/>
+<Component name="vivaldi.client.1" exec="NetworkInformationClient" host="knuthelv-laptop" port="6621" start="start"/>
+<Component name="vivaldi.client.2" exec="NetworkInformationClient" host="knuthelv-laptop" port="6622" start="start"/>
+<Component name="vivaldi.client.3" exec="NetworkInformationClient" host="knuthelv-laptop" port="6623" start="start"/>
+<Component name="vivaldi.client.4" exec="NetworkInformationClient" host="knuthelv-laptop" port="6624" start="start"/>
+
+</SystemManager>
+

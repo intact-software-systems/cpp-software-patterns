@@ -1,0 +1,116 @@
+cmake_minimum_required(VERSION 3.2)
+project(DCPS)
+
+add_definitions(-DMAKE_DLL_DCPS)
+
+SET(LIB_NAME DCPS)
+SET(EXTRA_LIBS BaseLib RxData DataReactor NetworkLib DDS RTPS)
+SET(SOURCE_PATH ${ONE_SOURCE_DIR}/${LIB_NAME})
+
+set(SOURCE_FILES
+    Core/IncludeLibs.h
+    Core/Query.cpp
+    Core/Query.h
+    Discovery/DiscoveryController.cpp
+    Discovery/DiscoveryController.h
+    Discovery/DiscoveryFactory.cpp
+    Discovery/DiscoveryFactory.h
+    Discovery/EndpointDiscoveryController.cpp
+    Discovery/EndpointDiscoveryController.h
+    Discovery/IncludeLibs.h
+    Discovery/ParticipantDiscoveryController.cpp
+    Discovery/ParticipantDiscoveryController.h
+    Domain/DomainFwd.h
+    Domain/DomainParticipant.cpp
+    Domain/DomainParticipant.h
+    Domain/DomainParticipantConfig.cpp
+    Domain/DomainParticipantConfig.h
+    Domain/DomainParticipantFactory.cpp
+    Domain/DomainParticipantFactory.h
+    Domain/DomainParticipantListener.h
+    Domain/DomainParticipantState.cpp
+    Domain/DomainParticipantState.h
+    Domain/IncludeLibs.h
+    Factory/DCPSConfig.cpp
+    Factory/DCPSConfig.h
+    Factory/DCPSFactory.cpp
+    Factory/DCPSFactory.h
+    Factory/DCPSInit.h
+    Factory/DCPSInitStrategies.cpp
+    Factory/DCPSInitStrategies.h
+    Factory/DCPSRuntime.cpp
+    Factory/DCPSRuntime.h
+    Factory/IncludeLibs.h
+    Infrastructure/DomainEntity.cpp
+    Infrastructure/DomainEntity.h
+    Infrastructure/Entity.cpp
+    Infrastructure/Entity.h
+    Infrastructure/IncludeLibs.h
+    Infrastructure/Listener.cpp
+    Infrastructure/Listener.h
+    Infrastructure/QosPolicy.cpp
+    Infrastructure/QosPolicy.h
+    Infrastructure/Status.cpp
+    Infrastructure/Status.h
+    Infrastructure/StatusBase.cpp
+    Infrastructure/StatusBase.h
+    Machine/CacheReader.cpp
+    Machine/CacheReader.h
+    Machine/CacheWriter.cpp
+    Machine/CacheWriter.h
+    Machine/VirtualMachineDCPS.cpp
+    Machine/VirtualMachineDCPS.h
+    Pub/AnyDataWriterHolder.h
+    Pub/DataWriter.cpp
+    Pub/DataWriter.h
+    Pub/DataWriterListener.h
+    Pub/DataWriterStatus.cpp
+    Pub/DataWriterStatus.h
+    Pub/IncludeLibs.h
+    Pub/PubFwd.h
+    Pub/Publisher.cpp
+    Pub/Publisher.h
+    Pub/PublisherListener.h
+    Status/DataStatus.h
+    Status/IncludeLibs.h
+    Status/State.h
+    Status/StatusCondition.cpp
+    Status/StatusCondition.h
+    Status/StatusFwd.h
+    Status/StatusImpl.h
+    Sub/AnyDataReaderHolder.h
+    Sub/DataReader.cpp
+    Sub/DataReader.h
+    Sub/DataReaderListener.h
+    Sub/DataReaderStatus.cpp
+    Sub/DataReaderStatus.h
+    Sub/IncludeLibs.h
+    Sub/ReadCondition.cpp
+    Sub/ReadCondition.h
+    Sub/Sample.h
+    Sub/SampleInfo.cpp
+    Sub/SampleInfo.h
+    Sub/SubFwd.h
+    Sub/Subscriber.cpp
+    Sub/Subscriber.h
+    Sub/SubscriberListener.h
+    Topic/ContentFilteredTopic.cpp
+    Topic/ContentFilteredTopic.h
+    Topic/IncludeLibs.h
+    Topic/Topic.cpp
+    Topic/Topic.h
+    Topic/TopicDescription.cpp
+    Topic/TopicDescription.h
+    Topic/TopicFwd.h
+    Topic/TopicHolder.h
+    Topic/TopicInstance.h
+    Topic/TopicListener.h
+    Topic/TypeSupport.h
+    CommonDefines.h
+    Export.h
+    IncludeExtLibs.h
+    IncludeLibs.h)
+
+include_directories(${ONE_SOURCE_DIR})
+add_library(${LIB_NAME} SHARED ${SOURCE_FILES})
+target_link_libraries(${LIB_NAME} ${EXTRA_LIBS})
